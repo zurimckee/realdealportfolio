@@ -43,6 +43,7 @@ header{
 
 span{
     color: #bc6c25;
+    
 }
 
 nav a{
@@ -52,6 +53,7 @@ nav a{
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
+    text-shadow: 2px 2px 0 #fefae0;
 
 }
 
@@ -70,6 +72,7 @@ nav ul li{
 nav a:hover{
     color: #bc6c25;
     border-bottom: 3px solid  #d4a373;
+    
 }
 nav a:active{
     color:#d4a373; 
@@ -86,6 +89,7 @@ section{
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
+    text-shadow: 2px 2px 0 #e0dab3;
 }
 
 .logo:hover{
