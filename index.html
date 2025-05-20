@@ -6,33 +6,62 @@
     <title>realdealportfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo"> Zuri McKee</a>
-        <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#"> Skills</a>
-            <a href="#"> Projects</a>
-            <a href="#"> Contact</a>
-            <a href="#"> About</a>
-        </nav>
-        
-    </header>
-    <section class="home">
-        <div class=home-img>
-            
-            <img src="IMG_0082.JPG" alt="zuri">
-            </div>
-
+    <nav id="desktop-nav">
+        <div class="logo"> Zuri McKee</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="#experience"><i class="fa-solid fa-briefcase"></i></a></li>
+                <li><a href="#projects"><i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#contact"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
         </div>
-        <div class="major-text">
-            <h1> hey i'm <span>zuri!</span> </h1>
-            <h2 class="minor-text">  <span>i'm an</span></h2>
-            <h3> aspiring software engineer and full stack web developer</h3><br>
-            <a href="#">let's get started!</a>
+    </nav>
 
+    <nav id="hamburger-nav">
+        <div class="logo"> zuri mcKee</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">about</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/pfp.JPEG" alt="zuri mckee pfp">
+            
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> hi i'm </p>
+            <h1 class="title"> zuri mckee</h1>
+            <p class="section__text__p2"> an aspiring software developer</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/resume.pdf')">my resume</button>
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href='#contact'">get in touch </button>
+            </div>
+            <div id="socials-container" class="icon">
+                <i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/zuri-mckee-113374281/'"></i>
+                <i class="fa-brands fa-github" onclick="location.href='https://github.com/zurimckee'"></i>
+            </div>
         </div>
     </section>
-
+    <script src="script.js"></script>
 </body>
+</html>
