@@ -234,7 +234,6 @@ section{
 /*icons*/
 .icon{
     cursor: pointer;
-
     color:bisque;
 
 }
@@ -338,10 +337,9 @@ section{
 .details-container{
     padding: 1.5rem;
     flex: 1;
-    background: #f9f5eb;
+    /*background: #f9f5eb;*/
     border-radius: 2rem;
     border: #bc6c25 0.1rem solid;
-    border-color: #dda15e;
     text-align: center;
 }
 
@@ -396,4 +394,68 @@ article{
 
 article .other-icons{
     cursor: default;
+}
+
+
+/* projects section */
+
+#projects{
+    position: relative;
+}
+
+.color-container{
+    border-color: #bc6c25;
+    background: #f9f5eb;
+}
+
+.project-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title{
+    margin: 1rem;
+    color: black;
+    
+}
+
+/* contact section */
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: #bc6c25 0.1rem solid;
+    border-color: #f9f5eb;
+    background: #f9f5eb;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+
+.contact-info-container p{
+    font-size: larger;
+
+}
+
+.contact-icon{
+    cursor: default;
+    height: 2rem;
+
+
 }
