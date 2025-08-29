@@ -1,6 +1,7 @@
 /* general styling */
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Gidole&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Gidole&family=Libertinus+Keyboard&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -9,15 +10,17 @@
 
 body{
     font-family: "Gidole", sans-serif;
+    
 }
 
 html{
     scroll-behavior: smooth;
+   
 
 }
 
 p{
-    color: #d4a373;
+    color: #4A708B;
 }
 
 /* transitions */
@@ -51,9 +54,9 @@ nav ul li{
 }
 
 a{
-    color: #dda15e;
+    color:#005377;
     text-decoration: none;
-    text-decoration-color: #bc6c25;
+    text-decoration-color:#052F5F;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 
@@ -61,13 +64,17 @@ a{
 
 /* figure out why the underline isn't showing up on nav bar */
 a:hover{
-    color:#bc6c25;
-    border-bottom: 3px solid #bc6c25;
+    color:#052F5F;
+    border-bottom: 3px solid #052F5F;
+    cursor:grab;
 
 }
 
 .logo{
     font-size: 2rem;
+    color: #052F5F;
+    font-family: 'Libertinus Keyboard', serif;
+
 
 }
 
@@ -101,7 +108,7 @@ a:hover{
 .hamburger-icon span{
     width: 100%;
     height: 2px;
-    background-color: #dda15e;
+    background-color: #005377;
     transition: all 0.3 ease-in-out;
 }
 
@@ -109,7 +116,7 @@ a:hover{
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: #fff;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -121,7 +128,7 @@ a:hover{
     padding: 10px;
     text-align: center;
     font-size: 1.5 rem;
-    color: #bc6c25;
+    color: #005377;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -192,8 +199,8 @@ section{
 
 .section__pic-container{
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     margin: auto 0;
 }
 
@@ -210,10 +217,11 @@ section{
 .section__text__p1{
     text-align: center;
     margin-bottom: 0.5rem;
+    font-size: 2 rem;
 }
 
 .section__text__p2{
-    font-size: 1.75 rem;
+    font-size: 2 rem;
     margin-bottom: 1rem;
 }
 
@@ -234,7 +242,7 @@ section{
 /*icons*/
 .icon{
     cursor: pointer;
-    color:bisque;
+    color:#005377;
 
 }
 
@@ -244,7 +252,7 @@ section{
 }
 
 .icon:hover{
-    color:#d4a373;
+    color:#005377;
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
 }
@@ -267,7 +275,7 @@ section{
 }
 
 .btn-color-1, .btn-color-2{
-    border: #dda15e 0.1rem solid;
+    border: #005377 0.1rem solid;
 
 }
 .btn-color-1:hover, .btn-color-2:hover{
@@ -275,13 +283,13 @@ section{
     
 }
 .btn-color-1, .btn-color-2:hover{
-    background: #bc6c25;
-    color: #f9f5eb;
+    background: #005377;
+    color: #fff;
     
 }
 
 .btn-color-1:hover{
-    background: #dda15e;
+    background: #052F5F;
     
 }
 
@@ -315,6 +323,7 @@ section{
 .about-details-container{
     justify-content: center;
     flex-direction: column;
+    text-align: center;;
 }
 
 .about-containers, .about-details-container{
@@ -339,8 +348,9 @@ section{
     flex: 1;
     /*background: #f9f5eb;*/
     border-radius: 2rem;
-    border: #bc6c25 0.1rem solid;
+    border: #052F5F 0.1rem solid;
     text-align: center;
+    background: #d3e0e6;
 }
 
 .section-container{
@@ -363,7 +373,7 @@ section{
 }
 
 .experience-subtitle{
-    color: #000000;
+    color: #052F5F;
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -404,8 +414,8 @@ article .other-icons{
 }
 
 .color-container{
-    border-color: #bc6c25;
-    background: #f9f5eb;
+    border-color: #0C2A4C;
+    background: #d3e0e6;
 }
 
 .project-img{
@@ -416,7 +426,7 @@ article .other-icons{
 
 .project-title{
     margin: 1rem;
-    color: black;
+    color: #005377;
     
 }
 
@@ -432,9 +442,9 @@ article .other-icons{
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: #bc6c25 0.1rem solid;
-    border-color: #f9f5eb;
-    background: #f9f5eb;
+    border: #0C2A4C 0.1rem solid;
+    border-color: #fff;
+    background: #fff;
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -459,3 +469,4 @@ article .other-icons{
 
 
 }
+
